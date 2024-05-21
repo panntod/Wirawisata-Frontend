@@ -1,3 +1,4 @@
+// Digunakan untuk alias "@/" sama dengan "src/"
 {
     "compilerOptions": {
         "baseUrl": ".",

@@ -1,13 +1,18 @@
-/** @type {import('tailwindcss').Config} */
+// Konfigurasi untuk tailwind
 export default {
   content: [
-    './src/components/**/*.{jsx,tsx}',
-    './src/pages/**/*.{jsx,tsx}',
-    './src/**/*.{jsx,tsx}',
-    './src/index.html'
+    "./src/components/**/*.{jsx,tsx}",
+    "./src/views/**/*.{jsx,tsx}",
+    "./src/**/*.{jsx,tsx}",
+    "./src/index.html",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        main: "#00D1FF",
+        secondary: "#3D6CB9",
+      },
+    },
   },
   plugins: [],
 };
