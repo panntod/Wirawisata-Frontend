@@ -56,8 +56,9 @@ module.exports = {
     "react/function-component-definition": "off",
     "react/react-in-jsx-scope": "off",
     "react/prop-types": "warn",
-    "import/no-unresolved": "warn", // Jika kamu tidak ingin mendapatkan warn ketika mengimport menggunakan alias, ganti ini menjadi "off"
+    "import/no-unresolved": "off",
     "import/extensions": "off",
+    "prefer-template": "off",
     semi: "warn",
   },
 };
