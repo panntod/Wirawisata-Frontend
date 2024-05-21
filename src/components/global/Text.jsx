@@ -11,15 +11,7 @@ export function H1({ children, className }) {
 }
 
 export function P({ children, className }) {
-  return <p className={"text-neutral-500 " + className}>{children}</p>;
-}
-
-export function Pblk({ children, className }) {
   return <p className={"text-black " + className}>{children}</p>;
-}
-
-export function Li({ children, className }) {
-  return <li className={"text-black " + className}>{children}</li>;
 }
 
 export function H2({ children, className }) {
@@ -46,5 +38,13 @@ export function H3({ children, className }) {
 export function H4({ children, className }) {
   return (
     <h4 className={"text-2xl font-bold text-black " + className}>{children}</h4>
+  );
+}
+
+export function H5({ children, className }) {
+  return (
+    <h5 className={"text-xl font-semibold text-black " + className}>
+      {children}
+    </h5>
   );
 }
