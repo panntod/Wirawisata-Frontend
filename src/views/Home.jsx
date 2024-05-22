@@ -2,6 +2,7 @@ import React from "react";
 
 import Banner from "@/components/atomic/Banner";
 import ServiceImage from "@/components/atomic/ServiceImage";
+import Footer from "@/components/global/Footer";
 import Navbar from "@/components/global/Navbar";
 import { H1 } from "@/components/global/Text";
 
@@ -75,6 +76,7 @@ export default function Home() {
         </div>
         <div className="bg-custom" />
       </div>
+      <Footer />
     </>
   );
 }
