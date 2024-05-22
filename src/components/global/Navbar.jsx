@@ -1,11 +1,20 @@
 import { useState } from "react";
 import { IoMenu, IoClose } from "react-icons/io5";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 import Logo from "../atomic/Logo";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
+
+  const navOptions = [
+    { link: "/", title: "Home" },
+    { link: "/about", title: "About" },
+    { link: "/transportasi", title: "Transportation" },
+    { link: "/hotel", title: "Hotel" },
+    { link: "/wisata", title: "Wisata" },
+  ];
 
   return (
     <nav className="bg-transparent backdrop-blur-xl py-4 md:px-12 px-4">
@@ -14,30 +23,15 @@ export default function Navbar() {
 
         {/* Content */}
         <div className="hidden md:flex space-x-6">
-          <Link
-            to="/"
-            className="text-gray-900 font-semibold hover:text-gray-800"
-          >
-            Home
-          </Link>
-          <Link
-            to="/about"
-            className="text-gray-900 font-semibold hover:text-gray-800"
-          >
-            About
-          </Link>
-          <Link
-            to="/services"
-            className="text-gray-900 font-semibold hover:text-gray-800"
-          >
-            Services
-          </Link>
-          <Link
-            to="/contact"
-            className="text-gray-900 font-semibold hover:text-gray-800"
-          >
-            Contact
-          </Link>
+          {navOptions.map((nav) => (
+            <Link
+              key={`${nav.title}-key`}
+              to={nav.link}
+              className={`text-gray-900 font-semibold hover:text-gray-800 ${nav.link === location.pathname ? "pb-1 border-b-2 border-main" : ""}`}
+            >
+              {nav.title}
+            </Link>
+          ))}
         </div>
         {/* End Content */}
 

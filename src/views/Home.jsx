@@ -1,6 +1,6 @@
 import React from "react";
 
-import Banner from "@/components/atomic/Banner";
+import HeroImage from "@/components/atomic/HeroImage";
 import ServiceImage from "@/components/atomic/ServiceImage";
 import Footer from "@/components/global/Footer";
 import Navbar from "@/components/global/Navbar";
@@ -59,7 +59,7 @@ export default function Home() {
           />
         </div>
         <div className="justify-center items-center px-24 py-12 w-1/2">
-          <Banner />
+          <HeroImage />
         </div>
       </section>
       <div className="h-screen relative custom-gradient flex flex-col justify-center items-center text-white">

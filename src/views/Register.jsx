@@ -7,14 +7,14 @@ import {
 } from "react-icons/io5";
 import { Link } from "react-router-dom";
 
-import Banner from "@/components/atomic/Banner";
+import HeroImage from "@/components/atomic/HeroImage";
 import { H1, P } from "@/components/global/Text";
 
 export default function Register() {
   return (
     <main className="flex h-screen w-full overflow-hidden">
       <div className="hidden md:flex justify-center items-center px-24 py-12 w-1/2">
-        <Banner />
+        <HeroImage />
       </div>
 
       <div className="flex justify-center items-center relative md:p-24 w-full md:w-1/2 bg-secondary">

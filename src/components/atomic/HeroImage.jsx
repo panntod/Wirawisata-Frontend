@@ -1,6 +1,6 @@
 import React from "react";
 
-const Banner = () => (
+const HeroImage = () => (
   <div className="w-full h-full relative z-0">
     <img
       src="/login-2.png"
@@ -24,4 +24,4 @@ const Banner = () => (
   </div>
 );
 
-export default Banner;
+export default HeroImage;

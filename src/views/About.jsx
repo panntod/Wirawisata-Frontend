@@ -11,13 +11,13 @@ export default function About() {
     <>
       <Navbar />
       <main>
-        {/* Banner */}
+        {/* HeroImage */}
         <img
-          src="/banner.png"
-          alt="banner"
+          src="/HeroImage.png"
+          alt="HeroImage"
           className="w-screen h-full object-contain"
         />
-        {/* End Banner */}
+        {/* End HeroImage */}
 
         {/* About Us */}
         <section className="flex justify-center py-12">
