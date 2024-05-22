@@ -5,27 +5,27 @@ import { Link } from "react-router-dom";
 
 import { H3, H5, P } from "@/components/global/Text";
 
-export default function Pesawat() {
+export default function Kereta() {
   return (
     <main className="min-h-screen p-6">
       <header className="flex items-center gap-6 mb-6">
         <Link to="/" className="hover:scale-110 transition duration-300">
           <IoArrowBackOutline className="text-2xl" />
         </Link>
-        <H3>Pesawat</H3>
+        <H3>Kereta</H3>
       </header>
 
       <section className="flex gap-6">
         <div className="hidden md:flex justify-center items-center px-24 py-12 w-1/2">
           <div className="w-full h-full relative z-0">
             <img
-              src="/ticket/pesawat-2.png"
+              src="/ticket/kereta-2.png"
               alt="login pictures"
               className="absolute -top-20 -right-24"
             />
             <div className="w-full h-full ">
               <img
-                src="/ticket/pesawat-1.png"
+                src="/ticket/kereta-1.png"
                 alt="login pictures"
                 className="mx-auto w-[380px] h-[600px]"
                 width={400}
@@ -33,7 +33,7 @@ export default function Pesawat() {
               />
             </div>
             <img
-              src="/ticket/pesawat-3.png"
+              src="/ticket/kereta-3.png"
               alt="login pictures"
               className="absolute -bottom-20 -left-24"
             />
