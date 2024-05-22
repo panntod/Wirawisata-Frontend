@@ -2,7 +2,7 @@ import { useState } from "react";
 import { IoMenu, IoClose } from "react-icons/io5";
 import { Link } from "react-router-dom";
 
-import { H3 } from "./Text";
+import Logo from "../atomic/Logo";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,14 +10,7 @@ export default function Navbar() {
   return (
     <nav className="bg-transparent backdrop-blur-xl py-4 md:px-12 px-4">
       <div className="container flex justify-between items-center">
-        {/* Logo */}
-        <div className="flex items-center gap-2">
-          <img src="/logo.png" alt="logo pictures" className="w-12 h-8" />
-          <Link to="/">
-            <H3 className="text-main-darker text-lg font-bold">WiraWisata</H3>
-          </Link>
-        </div>
-        {/* End Logo */}
+        <Logo color="main-darker" />
 
         {/* Content */}
         <div className="hidden md:flex space-x-6">
