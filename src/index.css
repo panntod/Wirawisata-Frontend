@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer components {
-  .custom-gradient {
+  .bg-gradient {
     @apply bg-gradient-to-r;
     background: linear-gradient(
       249.35deg,
@@ -13,7 +13,7 @@
     );
   }
 
-  .bg-custom {
+  .bg-image {
     background-image: url("/background.png");
     background-size: cover;
     background-position: center;
@@ -22,5 +22,16 @@
     width: 100%;
     z-index: -1;
     bottom: 0;
+  }
+
+  .banner-gradient {
+    @apply bg-gradient-to-r;
+    background: linear-gradient(
+      269.97deg,
+      rgba(0, 255, 240, 0.2) -13.69%,
+      #00d1ff 10.54%,
+      #00d1ff 68.21%,
+      rgba(0, 255, 240, 0.2) 115.93%
+    );
   }
 }
