@@ -13,8 +13,8 @@ export default function About() {
       <main>
         {/* HeroImage */}
         <img
-          src="/HeroImage.png"
-          alt="HeroImage"
+          src="/banner.png"
+          alt="banner"
           className="w-screen h-full object-contain"
         />
         {/* End HeroImage */}

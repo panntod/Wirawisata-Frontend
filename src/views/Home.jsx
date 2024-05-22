@@ -62,7 +62,7 @@ export default function Home() {
           <HeroImage />
         </div>
       </section>
-      <div className="h-screen relative custom-gradient flex flex-col justify-center items-center text-white">
+      <div className="h-screen relative bg-gradient flex flex-col justify-center items-center text-white">
         <H1 className="mb-6">Our Service</H1>
         <div className="flex gap-14 mb-6">
           {firstContent.map(({ img, title }) => (
@@ -74,7 +74,7 @@ export default function Home() {
             <ServiceImage key={`${title}-key-2`} title={title} img={img} />
           ))}
         </div>
-        <div className="bg-custom" />
+        <div className="bg-image" />
       </div>
       <Footer />
     </>
