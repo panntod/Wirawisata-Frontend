@@ -12,8 +12,8 @@ import Logo from "../atomic/Logo";
 
 const Footer = () => (
   <>
-    <div className="flex bg-secondary">
-      <div className="w-1/2 p-12">
+    <div className="flex flex-col md:flex-row bg-secondary">
+      <div className="w-full md:w-1/2 p-6 md:p-12">
         <div className="flex flex-col gap-6 mb-6 text-white">
           <div className="flex gap-4 items-center">
             <IoLogoWhatsapp className="text-2xl" />
@@ -43,7 +43,7 @@ const Footer = () => (
         <Logo color="white" />
       </div>
 
-      <div className="flex gap-12 w-1/2 p-12">
+      <div className="flex flex-col md:flex-row gap-6 md:gap-12 w-full md:w-1/2 p-6 md:p-12">
         <div>
           <H4 className="text-white mb-4">Service</H4>
           <div className="flex flex-col gap-2">
