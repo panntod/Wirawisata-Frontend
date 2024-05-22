@@ -12,7 +12,9 @@ import Home from "./views/Home";
 import Login from "./views/Login";
 import Profile from "./views/Profile";
 import Register from "./views/Register";
+import Kereta from "./views/Ticket/Kereta";
 import Pesawat from "./views/Ticket/Pesawat";
+import Transportation from "./views/Transportation";
 
 const router = createBrowserRouter([
   {
@@ -36,8 +38,16 @@ const router = createBrowserRouter([
     element: <Register />,
   },
   {
+    path: "/transportasi",
+    element: <Transportation />,
+  },
+  {
     path: "/ticket/pesawat",
     element: <Pesawat />,
+  },
+  {
+    path: "/ticket/kereta",
+    element: <Kereta />,
   },
   {
     // Jika path tidak ditemukan maka secara otomatis akan diarahkan ke home
