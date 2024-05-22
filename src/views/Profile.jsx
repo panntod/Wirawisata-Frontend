@@ -1,5 +1,6 @@
 import React from "react";
-import { IoPerson } from "react-icons/io5";
+import { IoArrowForwardOutline, IoPerson } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 import Footer from "@/components/global/Footer";
 import { H1, H5, P } from "@/components/global/Text";
@@ -17,8 +18,17 @@ export default function Profile() {
         </section>
         {/* End Sidebar */}
 
+        {/* Back Button */}
+        <Link
+          to="/"
+          className="absolute top-10 right-10 hover:scale-110 transition duration-300"
+        >
+          <IoArrowForwardOutline className="text-xl" />
+        </Link>
+        {/* End Back Button */}
+
         {/* Content */}
-        <section className="w-full">
+        <section className="w-full ">
           <H1 className="block border-b-2 border-black p-6 text-center">
             Hello Person
           </H1>

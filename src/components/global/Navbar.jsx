@@ -10,7 +10,7 @@ export default function Navbar() {
   return (
     <nav className="bg-transparent backdrop-blur-xl py-4 md:px-12 px-4">
       <div className="container flex justify-between items-center">
-        <Logo color="main-darker" />
+        <Logo color="secondary" />
 
         {/* Content */}
         <div className="hidden md:flex space-x-6">
