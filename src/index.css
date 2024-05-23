@@ -24,6 +24,17 @@
     bottom: 0;
   }
 
+  .bg-image-2 {
+    background-image: url("/background-2.png");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    bottom: 0;
+  }
+
   .banner-gradient {
     @apply bg-gradient-to-r;
     background: linear-gradient(
