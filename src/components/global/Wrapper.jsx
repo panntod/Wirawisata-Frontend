@@ -1,6 +1,6 @@
 export function SectionWrapper({ children, id }) {
   return (
-    <section className="relative w-full py-[82px]" id={id}>
+    <section className="relative min-h-screen p-12 mb-12" id={id}>
       {children}
     </section>
   );
