@@ -5,7 +5,7 @@ import Card from "@/components/atomic/Card";
 import ServiceImage from "@/components/atomic/ServiceImage";
 import Footer from "@/components/global/Footer";
 import Navbar from "@/components/global/Navbar";
-import { H2 } from "@/components/global/Text";
+import { H2, H3, P } from "@/components/global/Text";
 
 export default function Transportation() {
   const [active, setActive] = useState("kereta");
@@ -89,10 +89,17 @@ export default function Transportation() {
             <Card
               key={`${content.img}-key`}
               link={content.link}
-              from={content.from}
               img={`/transportation/${content.img}`}
-              to={content.to}
-            />
+            >
+              <div className="mb-4">
+                <P className="text-xs">Berangkat Dari</P>
+                <H3>{content.from}</H3>
+              </div>
+              <div className="mb-4">
+                <P className="text-xs">Sampai</P>
+                <H3>{content.to}</H3>
+              </div>
+            </Card>
           ))}
         </section>
       </section>
