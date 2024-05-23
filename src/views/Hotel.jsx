@@ -97,6 +97,7 @@ export default function Hotel() {
           <H5 className="text-white">Cari Sekarang</H5>
         </button>
       </main>
+
       <section className="min-h-screen p-12">
         <H2 className="mb-6">Rekomendasi Hotel</H2>
 
