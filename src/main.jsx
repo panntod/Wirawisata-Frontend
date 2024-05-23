@@ -9,6 +9,7 @@ import {
 import "./index.css";
 import About from "./views/About";
 import Home from "./views/Home";
+import Hotel from "./views/Hotel";
 import Login from "./views/Login";
 import Profile from "./views/Profile";
 import Register from "./views/Register";
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
   {
     path: "/transportasi",
     element: <Transportation />,
+  },
+  {
+    path: "/hotel",
+    element: <Hotel />,
   },
   {
     path: "/ticket/pesawat",
