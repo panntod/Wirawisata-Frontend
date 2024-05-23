@@ -6,6 +6,7 @@ import ServiceImage from "@/components/atomic/ServiceImage";
 import Footer from "@/components/global/Footer";
 import Navbar from "@/components/global/Navbar";
 import { H2, H3, P } from "@/components/global/Text";
+import { transportationContent } from "@/data/Transportation";
 
 export default function Transportation() {
   const [active, setActive] = useState("kereta");
@@ -29,33 +30,6 @@ export default function Transportation() {
     },
   ];
 
-  const transportationContent = [
-    {
-      link: "/ticket/kereta",
-      img: "1.png",
-      from: "Stasiun Sidoarjo",
-      to: "Stasiun Malang",
-    },
-    {
-      link: "/ticket/kereta",
-      img: "2.png",
-      from: "Stasiun Sidoarjo",
-      to: "Stasiun Jakarta",
-    },
-    {
-      link: "/ticket/kereta",
-      img: "3.png",
-      from: "Stasiun Sidoarjo",
-      to: "Stasiun Bandung",
-    },
-    {
-      link: "/ticket/kereta",
-      img: "4.png",
-      from: "Stasiun Sidoarjo",
-      to: "Stasiun Surabaya",
-    },
-  ];
-
   const buttonContent = ["kereta", "pesawat", "kapal", "bis"];
 
   return (
@@ -69,6 +43,7 @@ export default function Transportation() {
         </div>
         <div className="bg-image" />
       </main>
+
       <section className="min-h-screen p-12">
         <H2 className="mb-6">Perjalanan yang sering di pesan</H2>
         <div className="flex gap-4 mb-6">

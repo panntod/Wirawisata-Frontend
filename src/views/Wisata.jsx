@@ -3,27 +3,9 @@ import Card from "@/components/atomic/Card";
 import Footer from "@/components/global/Footer";
 import Navbar from "@/components/global/Navbar";
 import { H1, H2, H5, P } from "@/components/global/Text";
+import { wisataContent } from "@/data/Wisata";
 
 export default function Wisata() {
-  const wisataContent = [
-    {
-      img: "1.png",
-      title: "Taman Safari Bogor",
-    },
-    {
-      img: "2.png",
-      title: "Taman Marga Satwa",
-    },
-    {
-      img: "3.png",
-      title: "A Day In Safary",
-    },
-    {
-      img: "4.png",
-      title: "Back To The Zoo",
-    },
-  ];
-
   return (
     <>
       <Navbar />
@@ -70,7 +52,7 @@ export default function Wisata() {
       </main>
 
       <section className="min-h-screen p-12">
-        <H2 className="mb-6">Rekomendasi Hotel</H2>
+        <H2 className="mb-6">Rekomendasi Wisata</H2>
 
         <section className="flex justify-between">
           {wisataContent.map((content) => (
