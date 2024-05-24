@@ -1,4 +1,4 @@
-import React from "react";
+// Membuat hero image yang digunakan dibeberapa page
 
 const HeroImage = () => (
   <div className="w-full h-full relative z-0">

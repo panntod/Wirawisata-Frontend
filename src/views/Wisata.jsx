@@ -9,6 +9,8 @@ export default function Wisata() {
   return (
     <>
       <Navbar />
+
+      {/* Landingpage */}
       <main className="h-screen bg-gradient flex justify-center items-center text-white mb-12">
         <figure className="w-[840px] overflow-hidden">
           <img
@@ -50,7 +52,9 @@ export default function Wisata() {
           </button>
         </div>
       </main>
+      {/* End Landingpage */}
 
+      {/* Content */}
       <section className="min-h-screen p-12">
         <H2 className="mb-6">Rekomendasi Wisata</H2>
 
@@ -63,6 +67,7 @@ export default function Wisata() {
           ))}
         </section>
       </section>
+      {/* End Content */}
 
       <Banner />
       <Footer />

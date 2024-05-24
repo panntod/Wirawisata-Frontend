@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 
+// Membuat template component card
 const Card = ({ link = "/", img, children }) => (
   <Link
     to={link}

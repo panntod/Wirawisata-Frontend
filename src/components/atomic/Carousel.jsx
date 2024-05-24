@@ -2,6 +2,7 @@ import { useState } from "react";
 
 import { H3 } from "../global/Text";
 
+// Membuat component carrousel
 const Carousel = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 

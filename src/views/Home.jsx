@@ -84,6 +84,8 @@ export default function Home() {
   return (
     <>
       <Navbar />
+
+      {/* Landing Page */}
       <section className="h-screen flex flex-col md:flex-row gap-12 my-12">
         <div className="w-1/2 p-12 flex flex-col items-center justify-center">
           <h1 className="text-secondary text-4xl font-semibold sm:text-7xl mb-6">
@@ -102,7 +104,9 @@ export default function Home() {
           <HeroImage />
         </div>
       </section>
+      {/* End Landingpage */}
 
+      {/* Service */}
       <section className="h-screen relative bg-gradient flex flex-col justify-center items-center text-white">
         <H1 className="mb-6">Our Service</H1>
         <div className="flex gap-14 mb-6">
@@ -117,7 +121,9 @@ export default function Home() {
         </div>
         <div className="bg-image" />
       </section>
+      {/* End Service */}
 
+      {/* Transportation */}
       <SectionWrapper id="transportasi">
         <H2 className="mb-6">Transportasi</H2>
         <div className="flex gap-4 mb-6">
@@ -152,7 +158,9 @@ export default function Home() {
           ))}
         </section>
       </SectionWrapper>
+      {/* End Transportation */}
 
+      {/* Wisata */}
       <SectionWrapper id="wisata">
         <H2 className="mb-6">Rekomendasi Wisata</H2>
 
@@ -165,7 +173,9 @@ export default function Home() {
           ))}
         </section>
       </SectionWrapper>
+      {/* End Wisata */}
 
+      {/* Promo */}
       <section className="bg-gradient relative min-h-screen p-12 mb-12 flex flex-col justify-center items-center">
         <H1 className="text-white w-[600px] text-wrap text-center mb-6">
           Ada paket wisatanya nih kalau mau klik aja
@@ -191,8 +201,10 @@ export default function Home() {
           ))}
         </div>
       </section>
+      {/* End Promo */}
 
-      <SectionWrapper>
+      {/* Testimoni */}
+      <SectionWrapper id="testimoni">
         <H1 className="mb-4">Kenapa Wirawisata</H1>
 
         <div className="flex overflow-x-auto gap-4">
@@ -223,6 +235,8 @@ export default function Home() {
           ))}
         </div>
       </SectionWrapper>
+      {/* End Testimoni */}
+
       <Footer />
     </>
   );

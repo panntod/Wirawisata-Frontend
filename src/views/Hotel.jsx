@@ -10,6 +10,7 @@ import { H1, H2, H5, P } from "@/components/global/Text";
 import { hotelContent } from "@/data/Hotel";
 
 export default function Hotel() {
+  // Digunakan untuk memformat menjadi rupiah
   const formatIDR = new Intl.NumberFormat("en-US", {
     style: "currency",
     currency: "IDR",
@@ -18,6 +19,8 @@ export default function Hotel() {
   return (
     <>
       <Navbar />
+
+      {/* Landingpage */}
       <main className="h-screen relative bg-gradient flex flex-col justify-center items-center text-white mb-12">
         <div className="bg-image-2" />
         <H1 className="text-white mb-2">Mau Booking Dimana</H1>
@@ -67,7 +70,9 @@ export default function Hotel() {
           <H5 className="text-white">Cari Sekarang</H5>
         </button>
       </main>
+      {/* End Landingpage */}
 
+      {/* Content */}
       <section className="min-h-screen p-12">
         <H2 className="mb-6">Rekomendasi Hotel</H2>
 
@@ -87,6 +92,7 @@ export default function Hotel() {
           ))}
         </section>
       </section>
+      {/* End Content */}
 
       <Banner />
       <Footer />

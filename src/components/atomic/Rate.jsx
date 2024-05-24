@@ -1,3 +1,5 @@
+// Membuat component bintang rate
+
 const Rate = () => (
   <div className="flex items-center">
     <svg

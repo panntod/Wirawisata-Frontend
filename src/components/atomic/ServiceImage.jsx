@@ -1,7 +1,6 @@
-/* eslint-disable */
-
 import { H4 } from "../global/Text";
 
+// Membuat template service image yang digunakan dibeberapa page 
 const ServiceImage = (props) => (
   <div>
     <div className="bg-white rounded-full border-8 border-secondary">

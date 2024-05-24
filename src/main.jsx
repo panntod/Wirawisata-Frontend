@@ -17,6 +17,7 @@ import Pesawat from "./views/Ticket/Pesawat";
 import Transportation from "./views/Transportation";
 import Wisata from "./views/Wisata";
 
+// Digunakan untuk membuat browser router
 const router = createBrowserRouter([
   {
     path: "/",
@@ -65,6 +66,7 @@ const router = createBrowserRouter([
   },
 ]);
 
+// Implement dari browser router yang sudah dibuat
 createRoot(document.getElementById("root")).render(
   <RouterProvider router={router} />
 );

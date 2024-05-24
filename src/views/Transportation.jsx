@@ -35,6 +35,8 @@ export default function Transportation() {
   return (
     <>
       <Navbar />
+
+      {/* Landingpage */}
       <main className="h-screen relative bg-gradient flex flex-col justify-center items-center text-white mb-12">
         <div className="flex gap-16 mb-6">
           {dataContent.map(({ img, title }) => (
@@ -43,7 +45,9 @@ export default function Transportation() {
         </div>
         <div className="bg-image" />
       </main>
+      {/* End Landingpage */}
 
+      {/* Button Container */}
       <section className="min-h-screen p-12">
         <H2 className="mb-6">Perjalanan yang sering di pesan</H2>
         <div className="flex gap-4 mb-6">
@@ -58,7 +62,9 @@ export default function Transportation() {
             </button>
           ))}
         </div>
+        {/* End Button Container */}
 
+        {/* Content */}
         <section className="flex justify-between">
           {transportationContent.map((content) => (
             <Card
@@ -78,6 +84,7 @@ export default function Transportation() {
           ))}
         </section>
       </section>
+      {/* Content */}
 
       <Banner />
       <Footer />
